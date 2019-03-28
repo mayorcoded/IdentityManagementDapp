@@ -66,7 +66,12 @@ module.exports = {
       "ws://localhost:8546",
       "http://localhost:8545",
       "$WEB3"  // uses pre existing web3 object if available (e.g in Mist)
-    ]
+    ],
+      contracts: {
+          IdentityManager: {
+              args: ["National Youth Service Corps"]
+          }
+      }
   },
 
   // merges with the settings in default

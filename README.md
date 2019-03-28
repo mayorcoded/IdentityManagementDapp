@@ -3,5 +3,8 @@ This is a Dapp implements an Identity Management application on the Ethereum Blo
 
 To set up this Dapp,follow these instructions.
 - Install Node: Please install Node.js in version 8.11.3 LTS or higher.
-- Ethereum Client: Embark already comes with a blockchain simulator called Ganache. Optionally, in case we want to run a real node, 
-[geth](https://geth.ethereum.org/) is a pretty good one. Check out the installation guide for our platform and verify our installation with: `geth -version`
+- Ethereum Client (Optionally): Embark already comes with a blockchain simulator called Ganache. Optionally, in case we want to run a real node, 
+[geth](https://geth.ethereum.org/) is a pretty good one. Check out the installation guide for our platform and verify our installation with: 
+`$ geth version`
+- IPFS (Optional):  Checkout IPFS’ [installation guide](https://docs.ipfs.io/introduction/install/) to learn how to install IPFS on our local machine.
+`$ ipfs --version`

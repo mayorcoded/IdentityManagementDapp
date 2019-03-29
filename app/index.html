@@ -1,11 +1,212 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Embark</title>
-    <link rel="stylesheet" href="css/app.css">
-    <script src="js/app.js"></script>
-  </head>
-  <body>
-    <h3>Welcome to Embark!</h3>
-    <p>See the <a href="http://embark.readthedocs.io/en/latest/index.html" target="_blank">Embark's documentation</a> to see what you can do with Embark!</p>
-  </body>
+<head>
+  <base href="./" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>IdStamp - Notarize your documents on Ethereum</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <meta name="description" content="Notarize documents online, timestamp, ethereum, blockchain" />
+  <meta name="keywords" content="notary, online, document, timestamp, ethereum, blockchain" />
+  <link rel="author" href="https://twitter.com/dapatil" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon-8138e2b7dae6b1593a783be7a79b0d8f427feee2b042cc5165b82081355d0fe6.ico" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <meta name="csrf-param" content="authenticity_token" />
+  <meta name="csrf-token" content="9Mqz5LUBgwD41b6JXost30BBNI7QvsFwXCtvW5mFg4IszDV7dIxIxJbEfPfHsArRantcosAsHRVT7Y1mJr/JtQ==" />
+
+  <link rel="stylesheet" media="all" href="css/app.css" />
+  <script src="js/app.js"></script>
+</head>
+
+<body>
+<header>
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="ds-success serif-font ls-2 navbar-brand" href="/">
+          &nbsp;IdStamp
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="container">
+
+</div>
+<div class="jumbotron hero">
+  <div class="container">
+    <div class="row">
+      <h2 class="text-white text-center serif-font ls-3">Register documents on the Ethereum blockchain</h2>
+      <br/>
+      <br/>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-5 col-lg-5">
+        <div data-v-7f8075fc="" class="form-wrapper">
+          <div data-v-7f8075fc="" id="drop_region">
+            <div data-v-7f8075fc="" class="dropRegion">
+              <h2 data-v-7f8075fc="" class="vcenter"><i class="material-icons">description</i></i> Add Document(s)</h2></div>
+            <input data-v-7f8075fc="" type="file" id="upload" multiple="multiple" style="margin-bottom: 10px;">
+            <!---->
+            <form data-v-18224b0d="" data-v-7f8075fc="" action="/charges" method="post" class="form">
+              <input data-v-18224b0d="" type="hidden" name="authenticity_token" value="9Mqz5LUBgwD41b6JXost30BBNI7QvsFwXCtvW5mFg4IszDV7dIxIxJbEfPfHsArRantcosAsHRVT7Y1mJr/JtQ==">
+              <input data-v-18224b0d="" type="hidden" name="stripe_token">
+              <div data-v-18224b0d="" style="display: none;">
+                <div data-v-18224b0d="" class="form-group">
+                  <label data-v-18224b0d="" class="control-label">Name</label>
+                  <input data-v-18224b0d="" type="text" name="cardholder-name" placeholder="John Wordsmith" class="form-control">
+                  <div data-v-18224b0d="" class="text-danger"></div>
+                </div>
+                <div data-v-18224b0d="" class="form-group">
+                  <label data-v-18224b0d="" class="control-label">Email</label>
+                  <input data-v-18224b0d="" type="email" name="email" placeholder="john.wordsmith@somecompany.com" class="form-control">
+                  <div data-v-18224b0d="" class="text-danger"></div>
+                </div>
+                <div data-v-18224b0d="" class="form-group">
+                  <label data-v-18224b0d="" class="control-label">Credit or Debit Card</label>
+                  <div data-v-18224b0d="" id="card-element" class="StripeElement StripeElement--empty">
+                    <div class="__PrivateStripeElement" style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: transparent !important; position: relative !important; opacity: 1 !important;">
+                      <iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeFrame5" allowpaymentrequest="true" src="https://js.stripe.com/v3/elements-inner-card-eb4c8515b8c1b24590a5db6d1a8cd067.html#style[base][color]=%2332325d&amp;style[base][lineHeight]=24px&amp;style[base][fontFamily]=%22Helvetica+Neue%22%2C+Helvetica%2C+sans-serif&amp;style[base][fontSmoothing]=antialiased&amp;style[base][fontSize]=16px&amp;style[base][::placeholder][color]=%23aab7c4&amp;style[invalid][color]=%23fa755a&amp;style[invalid][iconColor]=%23fa755a&amp;componentName=card&amp;wait=false&amp;rtl=false&amp;keyMode=live&amp;origin=&amp;referrer=file%3A%2F%2F%2FUsers%2Fmac%2FDocuments%2Fworkshops%2Fdocstamp%2Findex.html&amp;controllerId=__privateStripeController1" title="Secure payment input frame" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; height: 24px;"></iframe>
+                      <input class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1" style="border: none !important; display: block !important; position: absolute !important; height: 1px !important; top: 0px !important; left: 0px !important; padding: 0px !important; margin: 0px !important; width: 100% !important; opacity: 0 !important; background: transparent !important; pointer-events: none !important; font-size: 16px !important;">
+                    </div>
+                  </div>
+                  <div data-v-18224b0d="" class="text-danger"></div>
+                </div>
+                <div data-v-18224b0d="" class="form-row">
+                  <label data-v-18224b0d="" class="control-label">
+                    Payment: $0.00
+                  </label>
+                </div>
+              </div>
+              <button data-v-18224b0d="" type="submit" class="btn btn-block btn-lg btn-success">Stamp It</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-5 col-md-6 col-lg-6 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+        <div class="form-wrapper">
+          <h2 class="text-center">Verify</h2>
+          <hr>
+          <div class="dropRegion">
+            <h2 class="vcenter"><i class="material-icons">description</i></i> Add Document</h2>
+            <input type="file" id="upload-verify" style="margin-bottom: 10px;">
+          </div>
+          <form action="/verification" method="post" class="form">
+            <input type="hidden" name="authenticity_token" value="ExL4uW/vmxio64Xv55Dawg49dJmG1Wsq5fRgqHsBXx/LFH4mrmJQ3Mb6R5F+q/3MJAcctZZHt0/qMoKVxDsVKA==">
+            <div class="form-group">
+              <label class="control-label">Email</label>
+              <input type="email" name="verification[email]" placeholder="john.wordsmith@somecompany.com" class="form-control">
+            </div>
+            <div class="form-group">
+              <label class="control-label">Digital Fingerprint</label>
+              <input type="text" placeholder="Enter document fingerprint" name="verification[digest]" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Verify</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="js/app.js"></script>
+</div>
+
+<div id="how_it_works" class="jumbotron">
+  <div class="container">
+    <h2 class="text-center">How it works</h2>
+    <div class="row">
+      <ul class="how-list text-center col-sm-12">
+        <li>
+        <span class="step-num-cont">
+          <span class="step-num">1</span>
+        </span>
+          <div class="step">
+            <header class="step-header">
+              <!-- <i class="fa fa-files-o fa-4x ds-grey-text"></i> -->
+              <i class="material-icons">description</i>
+              <h3 class="ds-success">Add Documents</h3>
+            </header>
+            <div class="step-desc">
+              <p>Select documents that you want to register using the form above.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+        <span class="step-num-cont">
+          <span class="step-num">2</span>
+        </span>
+          <div class="step">
+            <header class="step-header">
+              <i class="material-icons">lock</i>
+              <h3 class="ds-success">We Compute a cryptographic hash</h3>
+            </header>
+            <div class="step-desc">
+              <p>We use the SHA 256 algorithm to compute a hash of your files. This is done in your browser so
+                the contents of your files remain confidential.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+        <span class="step-num-cont">
+          <span class="step-num">3</span>
+        </span>
+          <div class="step">
+            <header class="step-header">
+              <i class="material-icons">stars</i>
+              <h3 class="ds-success">We store your hashes on the Ethereum blockchain</h3>
+            </header>
+            <div class="step-desc">
+              <p>We store the SHA 256 hash of your email, the SHA 256 hash of your file and a timestamp on the Ethereum
+                blockchain. The timestamp is generated by the blockchain, so there is no chance of tampering.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+        <span class="step-num-cont">
+          <span class="step-num">4</span>
+        </span>
+          <div class="step">
+            <header class="step-header">
+              <i class="material-icons">notifications_active</i>
+              <h3 class="ds-success">You get notified</h3>
+            </header>
+            <div class="step-desc">
+              <p>Once the blockchain confirms storage of your record, you get notified. This typically takes a few minutes.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer id="main-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="copyright text-center"> Andela Blockchain Workshop, 2019</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-242833-14', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
 </html>
+
+
